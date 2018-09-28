@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\MenuScreens Classes">
+      <UniqueIdentifier>{cec0fb0e-2848-4c20-b29b-aeb0b69bcd9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\button_class">
+      <UniqueIdentifier>{ece70be4-8bda-46ae-8272-f536157900dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameOver.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CGraphics.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CHelp.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogo.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainMenu.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuScreen.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="COptions.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CPause.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlay.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenuApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGamePlay.cpp">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CButton_.cpp">
+      <Filter>Source Files\button_class</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSound.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameOver.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CGraphics.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CHelp.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogo.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainMenu.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuScreen.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="COptions.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CPause.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlay.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CGamePlay.h">
+      <Filter>Source Files\MenuScreens Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenuApp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFML_Include.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CButton_.h">
+      <Filter>Source Files\button_class</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
