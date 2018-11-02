@@ -8,6 +8,10 @@ COptions::COptions() {}
 
 COptions::~COptions() {}
 
+COptions::COptions(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void COptions::onEnter() {
 
 }

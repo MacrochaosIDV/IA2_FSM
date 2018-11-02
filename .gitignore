@@ -32,3 +32,6 @@
 .vs/FSM_app/v15/ipch/AutoPCH/ecfbdd6228ea2aa/CMENUSCREEN.ipch
 .vs/FSM_app/v15/ipch/AutoPCH/ec090ddb44df06cd/CSOUND.ipch
 .vs/FSM_app/v15/ipch/AutoPCH/d7ebb7631e177309/CPLAY.ipch
+/Intermediate
+*.tlog
+*.ipch

@@ -8,6 +8,10 @@ CPause::CPause() {}
 
 CPause::~CPause() {}
 
+CPause::CPause(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CPause::onEnter() {
 
 }

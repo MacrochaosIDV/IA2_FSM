@@ -10,6 +10,10 @@ CSound::CSound() {
 
 CSound::~CSound() {}
 
+CSound::CSound(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CSound::onEnter() {
   
 }

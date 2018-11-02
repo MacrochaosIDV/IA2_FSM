@@ -7,6 +7,10 @@ CHelp::CHelp() {}
 
 CHelp::~CHelp() {}
 
+CHelp::CHelp(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CHelp::onEnter() {
 
 }

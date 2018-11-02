@@ -6,6 +6,7 @@ class CGraphics :
 public:
   CGraphics();
   ~CGraphics();
+  CGraphics(CMenuApp * _app);
 
   void onEnter();
   bool onUpdate(sf::RenderWindow& _window, sf::Event& _event);

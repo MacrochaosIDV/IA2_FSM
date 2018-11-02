@@ -7,6 +7,10 @@ CGamePlay::CGamePlay() {}
 
 CGamePlay::~CGamePlay() {}
 
+CGamePlay::CGamePlay(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CGamePlay::onEnter() {
 
 }

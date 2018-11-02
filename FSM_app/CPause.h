@@ -6,6 +6,7 @@ class CPause :
 public:
   CPause();
   ~CPause();
+  CPause(CMenuApp * _app);
 
   void onEnter();
   bool onUpdate(sf::RenderWindow& _window, sf::Event& _event);

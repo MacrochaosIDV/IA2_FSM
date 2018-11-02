@@ -4,8 +4,9 @@ class CLogo :
   public CMenuScreen
 {
 public:
-  CLogo();
+  CLogo() = default;
   ~CLogo() = default;
+  CLogo(CMenuApp * _app);
 
   void onEnter();
   bool onUpdate(sf::RenderWindow& _window, sf::Event& _event);

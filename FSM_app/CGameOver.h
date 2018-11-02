@@ -6,6 +6,7 @@ class CGameOver :
 public:
   CGameOver();
   ~CGameOver();
+  CGameOver(CMenuApp* _app);
 
   void onEnter();
   bool onUpdate(sf::RenderWindow& _window, sf::Event& _event);

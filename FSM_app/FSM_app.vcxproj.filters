@@ -11,6 +11,15 @@
     <Filter Include="Source Files\button_class">
       <UniqueIdentifier>{ece70be4-8bda-46ae-8272-f536157900dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameClasses">
+      <UniqueIdentifier>{ff4f1eaf-0961-44fb-91e8-fd9610a63858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\playingScreens">
+      <UniqueIdentifier>{ccba743a-3aff-4b06-a5ca-8eccf062cb47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaScripts">
+      <UniqueIdentifier>{88dc5bcd-0862-49e2-ab75-f5cf2456e732}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +64,18 @@
     <ClCompile Include="CButton_.cpp">
       <Filter>Source Files\button_class</Filter>
     </ClCompile>
+    <ClCompile Include="CUnit.cpp">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnitType.cpp">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CWorld.cpp">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Development\SQLite\sqlite3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSound.h">
@@ -98,6 +119,18 @@
     </ClInclude>
     <ClInclude Include="CButton_.h">
       <Filter>Source Files\button_class</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnit.h">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnitType.h">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorld.h">
+      <Filter>Source Files\GameClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua_Include.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

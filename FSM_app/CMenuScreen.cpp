@@ -7,6 +7,10 @@ CMenuScreen::CMenuScreen() {}
 
 CMenuScreen::~CMenuScreen() {}
 
+CMenuScreen::CMenuScreen(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CMenuScreen::onEnter() {
 
 }

@@ -11,6 +11,7 @@ class CMenuScreen
 public:
   CMenuScreen();
   ~CMenuScreen();
+  CMenuScreen(CMenuApp* _app);
 
   virtual void onEnter() = 0;
   virtual bool onUpdate(sf::RenderWindow& _window, sf::Event& _event) = 0;
@@ -19,6 +20,5 @@ public:
   virtual void draw(sf::RenderWindow& _window) = 0;
 
   CMenuApp* mp_app;
-  std::vector<sf::Drawable> objdraw;
 };
 

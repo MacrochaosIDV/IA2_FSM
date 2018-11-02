@@ -25,16 +25,17 @@ using std::vector;
 CMenuApp app;
 
 int main() {
-  sf::RenderWindow window(sf::VideoMode(600, 400), "Screens App");
+  sf::RenderWindow window(sf::VideoMode(1200, 800), "Screens App");
   sf::Event _event;
   app.init();
   while (window.isOpen()) {
     
-    /*while (window.pollEvent(event)) {
-      if (event.type == sf::Event::Closed) {
+    while (window.pollEvent(_event)) {
+      if (_event.type == sf::Event::Closed) {
         window.close();
+        return 0;
       }
-    }*/
+    }
 
     window.clear();
     app.update(window, _event);

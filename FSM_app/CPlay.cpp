@@ -8,6 +8,10 @@ CPlay::CPlay() {}
 
 CPlay::~CPlay() {}
 
+CPlay::CPlay(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CPlay::onEnter() {
 
 }

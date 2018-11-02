@@ -1,23 +1,21 @@
 #include "CLogo.h"
 #include "CMenuApp.h"
 
+#include <iostream>
 
 
 
-CLogo::CLogo() {
-  //logoImg.loadFromFile("logoimg.png");
-  //txtr.update(logoImg);
-  //txtr.setSmooth(true);
-  //txtr.create(300U, 300U);
-  //txtr.loadFromFile("logoimg.png");
-  //rctshLogo.setTexture(&txtr);
-  //rctshLogo.setSize(sf::Vector2f(300.0f, 300.0f));
-  //rctshLogo.setPosition(sf::Vector2f(0.0f, 0.0f));
-  //btnLogo.setString("LOGO");
-  //btnLogo.setPosition(sf::Vector2f(300.0f, 300.0f));
+
+CLogo::CLogo(CMenuApp * _app) {
+  mp_app = _app;
+  
 }
 
 void CLogo::onEnter() {
+  txtr.loadFromFile("logoimg.png");
+  rctshLogo.setTexture(&txtr);
+  rctshLogo.setPosition(0.0f, 0.0f);
+  rctshLogo.setSize(sf::Vector2<float>{1200.0f, 800.0f});
   timer = 3.0f;
 }
 
@@ -25,10 +23,18 @@ bool CLogo::onUpdate(sf::RenderWindow& _window, sf::Event& _event) {
   draw(_window);
   if (timer >= 0) {
     timer -= 0.016;
+    if (timer <= 0)
+      std::cout << "timer end\n";
     return true;
   }
-  else if (_event.KeyPressed == sf::Keyboard::Escape)
+  else if (_event.KeyPressed == sf::Keyboard::Escape) {
     mp_app->setState(&mp_app->mainMenu);
+    return true;
+  }
+  else {
+    mp_app->setState(&mp_app->mainMenu);
+    return true;
+  }
   return true;
 }
 

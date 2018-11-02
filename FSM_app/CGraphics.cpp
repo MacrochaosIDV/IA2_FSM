@@ -7,6 +7,10 @@ CGraphics::CGraphics() {}
 
 CGraphics::~CGraphics() {}
 
+CGraphics::CGraphics(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CGraphics::onEnter() {
 
 }

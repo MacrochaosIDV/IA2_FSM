@@ -21,8 +21,8 @@ using std::stack;
 class CMenuApp
 {
 public:
-  CMenuApp();
-  ~CMenuApp();
+  CMenuApp(){}
+  ~CMenuApp(){}
 
   void setState(CMenuScreen * pNewScreen);
   void pushState(CMenuScreen * pNewScreen);

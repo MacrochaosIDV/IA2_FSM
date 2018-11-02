@@ -8,6 +8,10 @@ CGameOver::CGameOver() {}
 
 CGameOver::~CGameOver() {}
 
+CGameOver::CGameOver(CMenuApp * _app) {
+  mp_app = _app;
+}
+
 void CGameOver::onEnter() {
   timer = 15.0f;
 }
@@ -33,7 +37,7 @@ void CGameOver::onExit() {
 }
 
 void CGameOver::draw(sf::RenderWindow& _window) {
-  _window.draw(btnContinue);
-  _window.draw(btnExit);
-  _window.draw(btnMainMenu);
+  btnContinue.draw(_window);
+  btnExit.draw(_window);
+  btnMainMenu.draw(_window);
 }
