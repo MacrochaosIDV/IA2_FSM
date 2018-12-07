@@ -1,4 +1,5 @@
 #include "CMenuApp.h"
+#include <iostream>
 
 
 
@@ -17,6 +18,7 @@ void CMenuApp::pushState(CMenuScreen * pNewScreen) {
 }
 
 void CMenuApp::popState() {
+  mpCurrScreen->onExit();
   mpSTKCurrScreen.pop();
 }
 
@@ -44,6 +46,7 @@ void CMenuApp::update(sf::RenderWindow& _window, sf::Event& _event) {
 }
 
 void CMenuApp::emptyStack() {
+  std::cout << "Emptying state stack\n";
   while (!mpSTKCurrScreen.empty())
     popState();
 }

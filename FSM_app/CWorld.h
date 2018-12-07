@@ -17,8 +17,8 @@ public:
   CUnitType* getUnitType(int id_type);
   vector<CUnit*> getUnitsInArea(int x, int y, float radius);
 
-  vector<CUnit> vecUnit;
-  vector<CUnitType> vecUnitType;
+  vector<CUnit*> m_vecUnit;
+  vector<CUnitType*> m_vecUnitType;
 
 };
 

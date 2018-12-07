@@ -13,9 +13,12 @@ public:
   void onExit();
   void draw(sf::RenderWindow& _window);
 
-  CButton_ btnContinue;
-  CButton_ btnMainMenu;
-  CButton_ btnExit;
-  float timer;
+  
+  CButton_ m_btnContinue;
+  CButton_ m_btnMainMenu;
+  CButton_ m_btnExit;
+  sf::Text m_countDownTimer;
+  sf::Font m_arial;
+  float m_timer;
 };
 

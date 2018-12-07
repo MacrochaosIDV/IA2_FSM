@@ -52,3 +52,7 @@ void CUnitType::loadFullFromDB(const int typeID) {
   ***********************/
   rc = sqlite3_exec(db, sql.c_str(), query_UnitSelect, this, (char**)&err[0]);
 }
+
+void CUnitType::loadImgFromFile() {
+
+}

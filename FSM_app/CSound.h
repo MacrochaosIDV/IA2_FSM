@@ -12,7 +12,8 @@ public:
   bool onUpdate(sf::RenderWindow& _window, sf::Event& _event);
   void onExit();
   void draw(sf::RenderWindow& _window);
-  sf::Text soundOptions;
+
+  CButton_ m_soundNotButton;
   CButton_ btnBack;
 };
 

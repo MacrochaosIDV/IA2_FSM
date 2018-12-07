@@ -2,6 +2,7 @@
 
 #include "SFML_Include.h"
 #include <vector>
+#include <iostream>
 
 #include "CButton_.h"
 
@@ -19,6 +20,8 @@ public:
   void setApp(CMenuApp* p_app);
   virtual void draw(sf::RenderWindow& _window) = 0;
 
+  sf::Font m_fnt;
+  sf::Texture btn_texture;
   CMenuApp* mp_app;
 };
 

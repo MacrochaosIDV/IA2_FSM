@@ -13,13 +13,18 @@
 
 void CButton_::draw(sf::RenderWindow& _window) {
   _window.draw(btnBG);
-  //_window.draw(btn_text);
+  _window.draw(btn_text);
 }
 
 void CButton_::setPos(const sf::Vector2f & _minP, const sf::Vector2f & _maxP) {
   btn_text.setPosition(_minP + (_maxP - _minP));
   btnBG.setSize(_maxP - _minP);
   btnBG.setPosition(_minP + (_maxP - _minP));
+}
+
+void CButton_::setPos(const sf::Vector2f & _newPos) {
+  btn_text.setPosition(_newPos);
+  btnBG.setPosition(_newPos);
 }
 
 void CButton_::setBGColor(sf::Color color) {

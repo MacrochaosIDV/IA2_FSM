@@ -3,9 +3,13 @@
 class CUnit
 {
 public:
-  CUnit();
+  CUnit() = default;
+  CUnit(CUnitType* type);
   ~CUnit();
 
-  CUnitType* type;
+  void init(int _idPlayer, int _idType);
+
+  CUnitType* m_type;
+  int m_controlingPlayer;
 };
 

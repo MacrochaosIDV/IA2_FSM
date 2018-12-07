@@ -13,6 +13,7 @@ public:
   void onExit();
   void draw(sf::RenderWindow& _window);
 
-  CButton_ btnBack;
+  CButton_ m_notBtnBack;
+  CButton_ m_btnBack;
 };
 

@@ -12,6 +12,7 @@ public:
 
   void draw(sf::RenderWindow& _window);
   void setPos(const sf::Vector2f& _minP, const sf::Vector2f& _maxP);
+  void setPos(const sf::Vector2f& _newPos);
   void setBGColor(sf::Color color);
   void setTxtColor(sf::Color color);
   bool checkClicked(sf::Event& _event);

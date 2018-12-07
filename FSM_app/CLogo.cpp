@@ -16,7 +16,7 @@ void CLogo::onEnter() {
   rctshLogo.setTexture(&txtr);
   rctshLogo.setPosition(0.0f, 0.0f);
   rctshLogo.setSize(sf::Vector2<float>{1200.0f, 800.0f});
-  timer = 3.0f;
+  timer = 9.0f;
 }
 
 bool CLogo::onUpdate(sf::RenderWindow& _window, sf::Event& _event) {
@@ -35,6 +35,7 @@ bool CLogo::onUpdate(sf::RenderWindow& _window, sf::Event& _event) {
     mp_app->setState(&mp_app->mainMenu);
     return true;
   }
+  _event.key.code = sf::Keyboard::Unknown;
   return true;
 }
 

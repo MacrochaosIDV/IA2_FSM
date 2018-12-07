@@ -88,7 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)SQLite\;$(DEVLIBS)Lua\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)rapidjson-master\include\rapidjson\;$(DEVLIBS)SQLite\;$(DEVLIBS)Lua\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
@@ -105,7 +105,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)SQLite\;$(DEVLIBS)Lua\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)rapidjson-master\include\rapidjson\;$(DEVLIBS)SQLite\;$(DEVLIBS)Lua\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
@@ -124,7 +124,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)SQLite\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)rapidjson-master\include\rapidjson\;$(DEVLIBS)SQLite\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
@@ -145,7 +145,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)SQLite\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(DEVLIBS)SFML-master\include\;$(DEVLIBS)rapidjson-master\include\rapidjson\;$(DEVLIBS)SQLite\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
@@ -160,6 +160,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\..\Development\SQLite\sqlite3.c" />
+    <ClCompile Include="CAnimation.cpp" />
     <ClCompile Include="CButton_.cpp" />
     <ClCompile Include="CGameOver.cpp" />
     <ClCompile Include="CGamePlay.cpp" />
@@ -172,13 +173,19 @@
     <ClCompile Include="COptions.cpp" />
     <ClCompile Include="CPause.cpp" />
     <ClCompile Include="CPlay.cpp" />
+    <ClCompile Include="CResource.cpp" />
+    <ClCompile Include="CResourceManager.cpp" />
     <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="CTexture.cpp" />
     <ClCompile Include="CUnit.cpp" />
     <ClCompile Include="CUnitType.cpp" />
     <ClCompile Include="CWorld.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UnitFSM.cpp" />
+    <ClCompile Include="UnitState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CAnimation.h" />
     <ClInclude Include="CButton_.h" />
     <ClInclude Include="CGameOver.h" />
     <ClInclude Include="CGamePlay.h" />
@@ -191,12 +198,18 @@
     <ClInclude Include="COptions.h" />
     <ClInclude Include="CPause.h" />
     <ClInclude Include="CPlay.h" />
+    <ClInclude Include="CResource.h" />
+    <ClInclude Include="CResourceManager.h" />
     <ClInclude Include="CSound.h" />
+    <ClInclude Include="CTexture.h" />
     <ClInclude Include="CUnit.h" />
     <ClInclude Include="CUnitType.h" />
     <ClInclude Include="CWorld.h" />
     <ClInclude Include="Lua_Include.h" />
     <ClInclude Include="SFML_Include.h" />
+    <ClInclude Include="UnitFSM.h" />
+    <ClInclude Include="UnitState.h" />
+    <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

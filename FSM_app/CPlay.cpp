@@ -13,25 +13,26 @@ CPlay::CPlay(CMenuApp * _app) {
 }
 
 void CPlay::onEnter() {
-
+  std::cout << "Entering play state\n";
 }
 
 bool CPlay::onUpdate(sf::RenderWindow& _window, sf::Event& _event) {
-  draw(_window);
-  if (_event.KeyPressed == sf::Keyboard::Escape) {
+  if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
     mp_app->pushState(&mp_app->pause);
   }
-  else if (_event.KeyPressed == sf::Keyboard::BackSpace) {
+  else if (sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace)) {
     mp_app->setState(&mp_app->gameOver);
   }
-  else if (_event.KeyPressed == sf::Keyboard::H) {
+  else if (sf::Keyboard::isKeyPressed(sf::Keyboard::H)) {
     mp_app->pushState(&mp_app->help);
   }
+  _event.key.code = sf::Keyboard::Unknown;
+  draw(_window);
   return true;
 }
 
 void CPlay::onExit() {
-
+  std::cout << "Exiting play state\n";
 }
 
 void CPlay::draw(sf::RenderWindow & _window) {

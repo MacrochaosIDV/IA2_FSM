@@ -13,8 +13,9 @@ public:
   void onExit();
   void draw(sf::RenderWindow& _window);
 
-  CButton_ btnBack;
-  CButton_ btnMainMenu;
-  CButton_ btnOptions;
+  CButton_ m_notBtnPause;
+  CButton_ m_btnBack;
+  CButton_ m_btnMainMenu;
+  CButton_ m_btnOptions;
 };
 

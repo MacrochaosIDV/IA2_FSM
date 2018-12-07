@@ -14,11 +14,26 @@
     <Filter Include="Source Files\GameClasses">
       <UniqueIdentifier>{ff4f1eaf-0961-44fb-91e8-fd9610a63858}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\playingScreens">
+    <Filter Include="Source Files\GameClasses\GameStateMachine">
       <UniqueIdentifier>{ccba743a-3aff-4b06-a5ca-8eccf062cb47}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\LuaScripts">
+    <Filter Include="Source Files\GameClasses\UnitClasses">
+      <UniqueIdentifier>{6a9c47a0-1bea-40df-b3ae-9bce7dc50062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameClasses\UnitClasses\UnitStateMachine">
+      <UniqueIdentifier>{adde6a3d-d11f-4015-b0df-fe0bcbb9db3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaSystem">
       <UniqueIdentifier>{88dc5bcd-0862-49e2-ab75-f5cf2456e732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaSystem\LuaScripts">
+      <UniqueIdentifier>{da756ae5-d10b-49e0-8114-b65b35ae93d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ResourceManager">
+      <UniqueIdentifier>{b1a2375f-a003-42e6-9f03-45d9d5f242a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ResourceManager\Resource classes">
+      <UniqueIdentifier>{c2d80b39-67df-4208-aa58-d95d85274539}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,17 +79,35 @@
     <ClCompile Include="CButton_.cpp">
       <Filter>Source Files\button_class</Filter>
     </ClCompile>
-    <ClCompile Include="CUnit.cpp">
-      <Filter>Source Files\GameClasses</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnitType.cpp">
-      <Filter>Source Files\GameClasses</Filter>
-    </ClCompile>
     <ClCompile Include="CWorld.cpp">
       <Filter>Source Files\GameClasses</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Development\SQLite\sqlite3.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnit.cpp">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnitType.cpp">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimation.cpp">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitState.cpp">
+      <Filter>Source Files\GameClasses\UnitClasses\UnitStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitFSM.cpp">
+      <Filter>Source Files\GameClasses\UnitClasses\UnitStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="CResourceManager.cpp">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CResource.cpp">
+      <Filter>Source Files\ResourceManager\Resource classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp">
+      <Filter>Source Files\ResourceManager\Resource classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,16 +153,37 @@
     <ClInclude Include="CButton_.h">
       <Filter>Source Files\button_class</Filter>
     </ClInclude>
-    <ClInclude Include="CUnit.h">
-      <Filter>Source Files\GameClasses</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnitType.h">
-      <Filter>Source Files\GameClasses</Filter>
-    </ClInclude>
     <ClInclude Include="CWorld.h">
       <Filter>Source Files\GameClasses</Filter>
     </ClInclude>
     <ClInclude Include="Lua_Include.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnit.h">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnitType.h">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimation.h">
+      <Filter>Source Files\GameClasses\UnitClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitFSM.h">
+      <Filter>Source Files\GameClasses\UnitClasses\UnitStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitState.h">
+      <Filter>Source Files\GameClasses\UnitClasses\UnitStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="CResourceManager.h">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CResource.h">
+      <Filter>Source Files\ResourceManager\Resource classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CTexture.h">
+      <Filter>Source Files\ResourceManager\Resource classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

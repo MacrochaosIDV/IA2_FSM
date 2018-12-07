@@ -9,6 +9,9 @@ public:
   void
   loadFullFromDB(const int typeID);
 
+  void
+  loadImgFromFile();
+
   unsigned short m_id;
   std::string m_className;
   unsigned short m_size;

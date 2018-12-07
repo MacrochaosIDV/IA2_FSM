@@ -35,8 +35,12 @@ int main() {
         window.close();
         return 0;
       }
+      if (_event.type == sf::Event::KeyPressed) {
+        std::cout << _event.key.code << std::endl;
+        //return 0;
+      }
     }
-
+    
     window.clear();
     app.update(window, _event);
     //window.draw();
